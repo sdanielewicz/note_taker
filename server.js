@@ -53,7 +53,6 @@ const { title, text, id } = req.body;
       id: uuid()
     };
 
-    // Obtain existing reviews
     fs.readFile('./db/db.json', 'utf8', (err, data) => {
       if (err) {
         console.error(err);
